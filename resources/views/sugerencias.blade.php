@@ -46,7 +46,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark  bg-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">ByronTosh</a>
+                <a class="navbar-brand" href="#">Grupo 1</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -68,8 +68,6 @@
     <main>
         <div class="container mt-5 col-12 col-sm-6">
             <p class="text text-center h2">Formulario de quejas, novedades o sugerencias</p>
-
-
             <form method="POST" action="{{route('sugerencias.form')}}">
                 @csrf
                 <div class="mb-3">
