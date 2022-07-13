@@ -58,17 +58,17 @@
                   <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="{{route('sugerencias')}}">Sugerencias</a>
+                  <a class="nav-link active" href="{{ route('sugerencias') }}">Sugerencias</a>
                 </li>
               </ul>
               @guest
-              <a class="btn btn-sm btn-primary" href="{{ route('login') }}">Iniciar Sesión</a>
+              <a class="btn btn-primary" href="{{ route('login') }}">Iniciar Sesión</a>
               @else
-              <a class="btn btn-sm btn-primary mx-2" href="{{route('mensaje')}}">Notificaciones</a>
+              {{-- <a class="btn btn-sm btn-primary mx-2" href="{{route('mensaje')}}">Notificaciones</a> --}}
               <form action="{{ route('logout') }}" method="POST">
                 @method('POST')
                 @csrf
-                <button type="submit" value="Cerrar" class="btn btn-sm btn-danger">Cerrar Sesión</button>
+                <button type="submit" value="Cerrar" class="btn btn-danger">Cerrar Sesión</button>
               </form>
               </a></p>
               @endguest

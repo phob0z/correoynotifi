@@ -44,10 +44,11 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark  bg-dark ">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Grupo 1</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><h3>Grupo 1</h3></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -56,11 +57,21 @@
                             <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="{{route('sugerencias')}}">Sugerencias</a>
+                            <a class="nav-link active" href="#">Sugerencias</a>
                         </li>
-
                     </ul>
-                    <a class="btn btn-sm btn-primary" href="/login">Iniciar Sesión</a>
+                    @guest
+                        <a class="btn btn-primary" href="{{ route('login') }}">Iniciar Sesión</a>
+                    @else
+                        {{-- <a class="btn btn-sm btn-primary mx-2" href="{{ route('mensaje') }}">Notificaciones</a> --}}
+                        <form action="{{ route('logout') }}" method="POST">
+                            @method('POST')
+                            @csrf
+                            <button type="submit" value="Cerrar" class="btn btn-danger">Cerrar Sesión</button>
+                        </form>
+                        </a></p>
+                    @endguest
+
                 </div>
             </div>
         </nav>

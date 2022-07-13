@@ -35,7 +35,9 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('welcome');
+})->name('home');
 
 Route::get('/sugerencias', [SugerenciasController::class, 'sendMails'])->name('sugerencias');
 
