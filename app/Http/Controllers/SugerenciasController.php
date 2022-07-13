@@ -29,13 +29,14 @@ class SugerenciasController extends Controller
 
         //return request()->all();
         notify()->success('Su sugerencia sera tomada en cuenta');
+        Mail::to('leonel.molina@epn.edu.ec')->queue(new MensajeCorreoRecibido($mensaje));
         //Mail::to('jean.fuentes@epn.edu.ec')->queue(new MensajeCorreoRecibido($mensaje));
         //Mail::to('jean.pierre1504@hotmail.com')->queue(new MensajeCorreoRecibido($mensaje));
         //Mail::to('tenorio0967@hotmail.com')->queue(new MensajeCorreoRecibido($mensaje));
         //Mail::to('jeanpyfuentes23@gmail.com')->queue(new MensajeCorreoRecibido($mensaje));
-        Mail::to('byron.loarteb@epn.edu.ec')->queue(new MensajeCorreoRecibido($mensaje));
-        Mail::to('by_tosh20@hotmail.com')->queue(new MensajeCorreoRecibido($mensaje));
-        Mail::to('bloarte@entodositio.com')->queue(new MensajeCorreoRecibido($mensaje));
+        //Mail::to('byron.loarteb@epn.edu.ec')->queue(new MensajeCorreoRecibido($mensaje));
+        //Mail::to('by_tosh20@hotmail.com')->queue(new MensajeCorreoRecibido($mensaje));
+        //Mail::to('bloarte@entodositio.com')->queue(new MensajeCorreoRecibido($mensaje));
         return view('/mensajeEntregado');
     }
 }
