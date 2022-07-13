@@ -141,37 +141,42 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <img src="\vendor\mckenziearts\laravel-notify\images\raul.jpg" alt="" style="border-radius: 50%; height: 200px">
+          <h2>Raúl Tenorio</h2>
+          <p>Nació en Quito-Ecuador el 9 de marzo de 2002. Realizó sus estudios secundarios en la Institución Educativa Fiscal “Miguel de Santiago”. Actualmente, estudia en la Escuela Politécnica Nacional la carrera de Tecnología Superior en Desarrollo de Software.</p>
           <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
+          <img src="\vendor\mckenziearts\laravel-notify\images\dustin.jpg" alt="" style="border-radius: 50%; max-height: 200px">
 
-          <h2>Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <h2>Dastin Chávez</h2>
+          <p>Nació en Quito-Ecuador el 11 de junio de 2001. Realizó sus estudios secundarios en el Colegio Técnico Salesiano Don Bosco de la Kennedy. En la actualidad realiza sus estudios en la Escuela Politécnica Nacional en Tecnología Superior en Desarrollo de Software.</p>
           <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
+          <img src="\vendor\mckenziearts\laravel-notify\images\leonel.jpg" alt="" style="border-radius: 50%; max-height: 200px">
 
-          <h2>Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
+          <h2>Leonel Molina</h2>
+          <p>Nació en Mérida-Venezuela el 18 de junio de 1988. Realizó sus estudios secundarios en el Colegio San Martín de Porres. Actualmente se encuentra cursando estudios de Desarrollo de Software en la Escuela Politécnica Nacional.</p>
           <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="\vendor\mckenziearts\laravel-notify\images\ariel.png" alt="" style="border-radius: 50%; max-height: 200px">
 
+          <h2>Ariel Calderón</h2>
+          <p>Nació en Quito-Ecuador el 26 de junio de 1998. Realizó sus estudios secundarios en la unidad educativa William Caxton. Actualmente realiza sus estudios en la Escuela Politécnica Nacional en Tecnología Superior en Desarrollo de Software. Trabaja en la empresa Soft Warehouse como desarrollador junior desde el 15 de marzo de 2022.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="\vendor\mckenziearts\laravel-notify\images\jean.jpg" alt="" style="border-radius: 50%; max-height: 200px">
+
+          <h2>Jean Fuentes</h2>
+          <p>Nació en Quito-Ecuador el 13 de marzo de 2002. Realizó sus estudios secundarios en el Colegio Técnico UNE, cursando la carrera técnica Electrónica de consumo. Actualmente realiza sus estudios universitarios en la Escuela Politécnica Nacional en la carrera de Tecnología en Desarrollo de Software. </p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
       <!-- START THE FEATURETTES -->
 
