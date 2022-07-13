@@ -45,38 +45,39 @@
     <link href="carousel.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Grupo 1</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h3>Grupo 1</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="{{ route('sugerencias') }}">Sugerencias</a>
-                </li>
-              </ul>
-              @guest
-              <a class="btn btn-primary" href="{{ route('login') }}">Iniciar Sesión</a>
-              @else
-              {{-- <a class="btn btn-sm btn-primary mx-2" href="{{route('mensaje')}}">Notificaciones</a> --}}
-              <form action="{{ route('logout') }}" method="POST">
-                @method('POST')
-                @csrf
-                <button type="submit" value="Cerrar" class="btn btn-danger">Cerrar Sesión</button>
-              </form>
-              </a></p>
-              @endguest
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Sugerencias</a>
+                    </li>
+                </ul>
+                @guest
+                    <a class="btn btn-primary" href="{{ route('login') }}">Iniciar Sesión</a>
+                @else
+                    {{-- <a class="btn btn-sm btn-primary mx-2" href="{{ route('mensaje') }}">Notificaciones</a> --}}
+                    <form action="{{ route('logout') }}" method="POST">
+                        @method('POST')
+                        @csrf
+                        <button type="submit" value="Cerrar" class="btn btn-danger">Cerrar Sesión</button>
+                    </form>
+                    </a></p>
+                @endguest
 
             </div>
-          </div>
-        </nav>
-      </header>
+        </div>
+    </nav>
+</header>
 </main>
     <div class="container mt-5 col-12 col-sm-6">
         <br><br>

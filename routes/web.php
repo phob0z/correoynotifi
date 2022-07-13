@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SugerenciasController;
+use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 
 /*
@@ -26,7 +27,7 @@ use Inertia\Inertia;
 // });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
@@ -36,7 +37,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::get('/home', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 
 Route::get('/sugerencias', [SugerenciasController::class, 'sendMails'])->name('sugerencias');
@@ -54,3 +55,7 @@ Route::get('/notificaciones/{id}', [NotificacionController::class,'show'])->name
 Route::patch('/notificaciones/{id}', [NotificacionController::class,'update'])->name('notificacion.realizada')->middleware('auth');
 
 Route::delete('/notificaciones/{id}', [NotificacionController::class,'destroy'])->name('notificacion.terminada')->middleware('auth');
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
