@@ -4,6 +4,7 @@ import { Head } from '@inertiajs/inertia-vue3';
 </script>
 
 <template>
+
     <Head title="Dashboard" />
 
     <BreezeAuthenticatedLayout>
@@ -22,5 +23,8 @@ import { Head } from '@inertiajs/inertia-vue3';
                 </div>
             </div>
         </div>
+        <Link :href="route('home')" class="ml-4 text-sm text-gray-700 underline">
+        Home
+        </Link>
     </BreezeAuthenticatedLayout>
 </template>
